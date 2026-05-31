@@ -1,3 +1,5 @@
+package entites;
+
 import java.util.Date;
 
 public class Etudiant {
@@ -92,7 +94,7 @@ public class Etudiant {
 
     @Override
     public String toString() {
-        String s= "Etudiant{" +
+        String s= "entites.Etudiant{" +
                 "id=" + id +
                 ", nom='" + nom + '\'' +
                 ", prenom='" + prenom + '\'' +
