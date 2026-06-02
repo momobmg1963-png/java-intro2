@@ -1,6 +1,7 @@
 package entites;
 
 import java.util.Date;
+import java.util.Scanner;
 
 public class Etudiant {
 
@@ -94,7 +95,7 @@ public class Etudiant {
 
     @Override
     public String toString() {
-        String s= "entites.Etudiant{" +
+        String s = "entites.Etudiant{" +
                 "id=" + id +
                 ", nom='" + nom + '\'' +
                 ", prenom='" + prenom + '\'' +
@@ -106,6 +107,39 @@ public class Etudiant {
                 '}';
         System.out.println(s);
         return s;
+
+    }
+
+    public int snp() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("veuillez saisir un entier");
+        int x = sc.nextInt();
+        int snp = 0;
+        for (int i = 0; i <= x; i++) {
+            snp = snp + 1;
+
+
+        }
+        System.out.println("     :::::::: snp " + snp);
+        return snp;
+
+    }
+
+    public int pnp() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("veuillez saisir un entier");
+        int x = sc.nextInt();
+        int pnp = 1;
+        for (int i = 1; i <= x; i++) {
+            pnp = pnp * i;
+
+
+
+        }
+        System.out.println("     :::::::: snp " + pnp);
+        sc.close();
+        return pnp;
+
 
     }
 }

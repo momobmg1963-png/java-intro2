@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class TestSwitch {
     static void main(String[] args) {
+        snp();
+
         System.out.println("donner un nombe");
         //declaration of scanner objet
         Scanner clavier = new Scanner(System.in);
@@ -35,4 +37,20 @@ public class TestSwitch {
             System.out.println("I =" +i);
         }
     }
+    // creation de la fonctions SNP
+
+    public static int snp(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("veuillez saisir un entier");
+        int x = sc.nextInt();
+        int snp =0;
+        for (int i = 0; i <= x; i++){
+            snp = snp+i;
+
+
+        }
+        System.out.println("     :::::::: snp "+snp);
+        return snp;
+    }
+
 }
